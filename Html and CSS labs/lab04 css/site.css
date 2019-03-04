@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box
+}
+body {background-color: rgb(239, 239, 241);
+    font-family: 'Arimo', sans-serif;
+}
+h1 h2 h3 {
+    font-family: 'Roboto', sans-serif;
+}
+.topimg {
+    background-image: url("underbridge.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    margin: 2px;
+} 
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+.about-col {
+    display: flex;
+    align-items: flex-end
+}
+
+.jumbotron{
+    min-height: 600px;
+}
+.jumbo{ 
+    display: flex;
+    align-items: center
+}
+
+
+

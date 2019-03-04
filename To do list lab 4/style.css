@@ -1,0 +1,17 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+li button{
+    margin-left: 50px;
+    float:right;
+}
+li input{
+    margin-right: 50px;
+    float: left;
+}

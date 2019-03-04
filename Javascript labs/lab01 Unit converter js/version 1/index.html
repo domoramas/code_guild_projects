@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Arimo|Roboto" rel="stylesheet">
+        <link rel= "stylesheet" href="site.css">
+    </head>
+    <body class= "container">
+        <!-- Title slide -->
+        <!----------------->
+       <div class = "title">
+           <h1> Unit Converter App</h1>
+       </div>
+       <!------------------->
+       <!------------------->
+       <!-- converter box  -->
+       <div class = "converter" id = "converter-box">
+           <!-- text input for the distance to be converted -->
+           <label for="num">What is the distance:</label>
+           <input type="text" name = "num" id="num">
+           <!-- drop down boxes for selecting the input units -->
+           <label for="inUnit">Input Units</label>
+           <select id= "inUnit" name="inUnit">
+                <option value="ft">ft</option>
+                <option value="in ">in</option>
+                <option value="yd">yd</option>
+                <option value="mi">mi</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+              </select>
+              <!-- drop down boxes for selexting the output units -->
+            <label for="outUnit">Units to conver to</label>
+            <select id= "inUnit" name="inUnit">
+                <option value="ft">ft</option>
+                <option value="in ">in</option>
+                <option value="yd">yd</option>
+                <option value="mi">mi</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select>
+            <button id="btn">Enter</button>
+       </div>
+       <!--jacvascript code  -->
+      
+       <script src="app.js"></script>
+    </body>
+</html>
+

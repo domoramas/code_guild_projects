@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|VT323" rel="stylesheet">
+        <title>Lab05-Burrito Order Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body > 
+        <!--Title of page-->
+        <!----------------->
+        <div class="title">
+            <div class="logo">
+                <img src="https://lh3.googleusercontent.com/-rdx0jIsE8iQ/VLv0H8MvysI/AAAAAAAAABA/0SRLaenLNZ0/w1060-h1060-n-rw/Pixel%2BBurrito.png">
+            </div>
+            <h1>The 8-bit Cantina</h1>
+        </div>
+        <!-- order form for ingredients -->
+        <div class="orderform">  
+            <br>
+            <h2><u>Customize Your Burrito</u></h2>
+            <br>
+            <form action="http://httpbin.org/anything" method="post">
+
+                <div class="ingredients clearfix">
+                <!-- radio button options -->
+                    <fieldset>
+                        <legend>Tortilla</legend>
+                        <input type="radio" name="tortilla" value="White Flour"id= "white">
+                        <label for="white">White Flour</label><br>
+                        <input type="radio" name="tortilla" value="Wheat Flour" id="wheat">
+                        <label for="wheat">Wheat Flour</label><br>
+                        <input type="radio" name="tortilla" value="Spinach" id="spinach">
+                        <label for="spinach">Spinach</label><br>
+                        <input type="radio" name="tortilla" value="Corn" id="corn">
+                        <label for="corn">Corn</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rice</legend>
+                        <input type="radio" name="rice" value="White Rice" id="white rice">
+                        <label for="white rice">White Rice</label><br>
+                        <input type="radio" name="rice" value="Brown Rice" id="brown rice">
+                        <label for="brown rice">Brown Rice</label>  
+                    </fieldset>
+                    <fieldset>
+                        <legend>Beans</legend>
+                        <input type="radio" name="Beans" value="Black Beans" id="Black Beans">
+                        <label for="Black Beans">Black Beans</label><br>
+                        <input type="radio" name="Beans" value="Pinto Beans" id="Pinto Beans">
+                        <label for="Pinto Beans">Pinto Beans</label>  
+                    </fieldset>
+                    <fieldset>
+                        <legend>Protein</legend>
+                        <input type="radio" name="Protein" value="Carnitas"id= "carnitas">
+                        <label for="carnitas">Carnitas</label><br>
+                        <input type="radio" name="Protein" value="Chicken" id="chicken">
+                        <label for="chicken">Chicken</label><br>
+                        <input type="radio" name="Protein" value="Sofritas" id="sofritas">
+                        <label for="sofritas">Sofritas</label><br>
+                        <input type="radio" name="Protein" value="None" id="none">
+                        <label for="none">None</label>
+                    </fieldset>
+                    <!-- Checkboxes for addtnl ingredients -->
+                    <fieldset>
+                        <legend>Additional Ingredients</legend>
+                        <input type="checkbox" name="cheese" value="yes" id="cheese">
+                        <label for="cheese">Cheese</label><br>
+                        <input type="checkbox" name="Sour Cream" value="yes" id="sour cream">
+                        <label for="sour cream">Sour Cream</label><br>
+                        <input type="checkbox" name="Guacamole" value="yes" id="Guacamole">
+                        <label for="Guacamole">Guacamole</label>
+                    </fieldset>
+                </div>
+                <div class="pinfo">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <label for="username">User Name:</label>
+                        <input type="text" name="username" pattern="[a-z]{6,15}" title="username must be at least 6 characters, all lowercase letters" id="username"required/><br>
+                        <label for="pw">Password:</label>
+                        <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" id="pw">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact info</legend>
+                        <label for="name">Name(First & Last):</label>
+                        <input type="text" name="name" pattern="([A-Za-z]{3,})( )([A-Za-z]{3,})" id="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id= "email"><br>
+                        <label for="tel">Telephone #:</label>
+                        <input type="tel" name="tel" id="tel">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tell us about you</legend>
+                        <label for= "bday">Birthdate:</label> 
+                        <input type="date" name= "bday" id="bday"><br> 
+                        <label for="ssn"> SSN: </label> 
+                        <input type="num" name="ssn" pattern="[0-9]{9,9}" title="social security number no dashes or spaces" id="ssn">
+                        <label for="bday-club">Join our birthday club</label>
+                        <input type="checkbox" name="bday-club" value="yes" id="bday-club">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Address</legend>
+                        <label for="street">Street:</label>
+                        <input type="text" name="street" id="street" ><br>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city"><br>
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state" pattern="[A-Z]{2,2}" title="two letter format"><br>
+                        <label for="zip">Zip:</label>
+                        <input type="num" name="zip" id="zip" pattern="[0-9]{5,5}">
+                    </fieldset>
+                </div>
+                <button type="submit">submit</button>
+                <button type="reset">clear</button>
+            </form>
+            <footer>The 8-bit Cantina, LLC. All rights reserved.</footer>
+         </div>
+    </body>
+</html>

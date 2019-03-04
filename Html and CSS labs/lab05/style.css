@@ -1,0 +1,118 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* .container {
+    display: grid;
+    margin-left:auto;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 25%  */
+/* } */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: rgb(255, 238, 160)
+}
+.title{ 
+    /* grid-column-start: 1 span 2;
+    grid-row-start: 1; */
+    background-color: rgb(7, 148, 7);
+    border: 22px solid rgba(255, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'VT323', monospace
+}
+
+.logo img{
+    max-width: 150px;
+}
+
+
+.orderform {
+    /* background-color: rgb(241, 226, 158); */
+    max-width: 100%;
+    margin: auto;
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.ingredients {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  
+}
+.ingredients > fieldset{
+    width: 100%;
+    margin: 0
+}
+
+form {
+    /* display:flex; */
+    width: 100%
+}
+
+.pinfo label{
+    display:inline-block;
+    width: 35%;
+}
+.pinfo input{
+    display: inline-block; 
+    width: 50%;
+}
+/* .pinfo >fieldset{
+    display: flex;
+} */
+button[type=submit],
+button[type=reset] {
+    background-color: red 
+}
+input[type=radio],
+input[type=checkbox],
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=num],
+input[type=password] {
+    box-shadow: 0 0 1px;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+input[type=date]:hover,
+input[type=num]:hover,
+input[type=password]:hover {
+    box-shadow: 0 0 4px;
+}
+/* font-family: 'Ubuntu', sans-serif; */
+
+@media (min-width: 768px) {
+    .ingredients > fieldset{
+        width: 20%;
+        margin: 0
+    }
+    .pinfo {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+      
+    }
+    .pinfo > fieldset {
+        width: 50%;
+        margin: 0
+
+    }
+
+}

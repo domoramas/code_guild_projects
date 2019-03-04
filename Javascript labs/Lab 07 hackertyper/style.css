@@ -1,0 +1,143 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: black;
+}
+#console-text{
+  color: rgb(140, 228, 9);
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+}
+#window-text {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+#access {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+  color: rgb(140, 228, 9);
+}
+#myProgress {
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 100;
+  color: rgb(140, 228, 9);
+}
+#myProgress {
+  width: 100%;
+}
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: rgb(140, 228, 9);
+}
+#console-text:after {
+    content: "_";
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(140, 228, 9);
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: rgb(140, 228, 9);
+    }
+  }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  border: 1px rgb(140, 228, 9) solid;
+  left: 50%;
+  top: 25%;
+  min-width: 220px; /* Full width */
+  min-height: 100px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(29, 28, 28, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

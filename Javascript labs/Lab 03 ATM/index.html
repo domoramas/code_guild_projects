@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>ATM</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+        <link rel= "stylesheet" href="site.css">
+    </head>
+    <body>
+       <div class="container">
+           <div class="title">
+                <h1>Banking Bank ATM</h1>
+           </div>
+           <div class="column">
+                <div class="btn-group-vertical btn-block">
+                    <button type="button" class="btn btn-primary btn-block" id="deposit-start" >Deposit</button>
+                    <div class="input-group mb-3" id= "deposit">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" id="deposit-amount">
+                            <div class="input-group-append">
+                              <button type= "button" class="btn btn-outline-primary" id="enter-deposit">Enter</button>
+                            </div>
+                          </div>
+                    <button type="button" class="btn btn-primary btn-block" id="withdrawl-start">Withdraw</button>
+                    <div class="input-group mb-3" id= "withdrawl">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" id="withdrawl-amount">
+                            <div class="input-group-append">
+                              <button type= "button" class="btn btn-outline-primary" id="enter-withdrawl">Enter</button>
+                            </div>
+                          </div>
+                    <button type="button" class="btn btn-primary btn-block" id="balance">Balance</button>
+                    <button type="button" class="btn btn-primary btn-block" id="history">History</button>
+                 </div>
+                 <div class = "column">
+                     <p id= "output"></p>
+                     <ol id= "trans-list"></ol>
+                 </div>          
+           </div>
+       </div>
+       <script src="app.js"></script>
+    </body>
+</html>

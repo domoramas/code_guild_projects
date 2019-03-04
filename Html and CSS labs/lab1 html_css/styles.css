@@ -1,0 +1,92 @@
+body {
+    text-align: center; 
+    background-color: lightblue; 
+    color: rgba(23, 23, 122, 0.918); 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#hawk {
+    float: left; margin: 50px;
+}
+
+ p { 
+    margin: 0px 80px; 
+    padding: 5px; 
+    background-color: rgba(25, 67, 129, 0.555); 
+    color: whitesmoke;
+}
+a { 
+    color: goldenrod;
+}
+
+ul {
+    margin: 0px 80px 20px; 
+    padding: 0px 550px; 
+    background-color: rgb(36, 81, 117); 
+    color: whitesmoke; 
+    list-style-type: square;
+}
+
+q { 
+color: rgba(9, 13, 56, 0.623);
+}
+
+h2 { 
+    margin: 10px
+}
+
+h1 { 
+    text-shadow: 1px 1px 2px black; 
+    font-size: 4rem; 
+    margin: 5px;
+}
+
+img {
+    border-radius: 25px;
+    border: 2px solid midnightblue;
+}
+
+iframe { 
+    float: right; margin: 50px;
+}
+
+.content-box {
+    columns: 3 auto;
+    column-rule-color: rgb(48, 125, 222);
+}
+
+footer {
+    clear: both;
+}
+footer * {
+    display: inline;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(167, 159, 159, 0.027);
+    position: fixed;  /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}

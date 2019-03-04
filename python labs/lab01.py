@@ -1,0 +1,29 @@
+from turtle import *
+# head 
+circle(50)
+#neck
+left(-90)
+forward(25)
+#arms
+left(45)
+forward(75)
+penup()
+backward(75)
+pendown()
+right(90)
+forward(75)
+penup()
+backward(75)
+#torso
+pendown()
+left(45)
+forward(75)
+#legs
+left(45)
+forward(75)
+penup()
+backward(75)
+pendown()
+right(90)
+forward(75)
+done()

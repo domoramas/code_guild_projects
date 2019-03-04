@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container{
+    background-color:white;
+}
+
+#meal-app {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+#search-box {
+    background: lightblue;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+ 
+  
+#results {
+    justify-content: space-between;
+    align-content: space-between;
+    background: white;
+}
+
+header {
+    background: grey;
+    width: 100%;
+    padding: 5px;
+}
+header h1{
+    color: black;
+    text-align: center;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    border: 4px black solid;
+
+}
+
+#deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card button{ 
+}
+
+.resultframes{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px black solid;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.resultframes button{
+    align-items: flex-end
+}
+
+.resultframes p{
+    background-color:rgba(128, 128, 128, 0.345); 
+}
